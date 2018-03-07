@@ -1,64 +1,160 @@
-body {
-    margin: 40px;
-}
-
-    /*border*/
- .buttons {
-    background-color: rgb(120, 22, 201);
-    color: grey;
+.title {
     text-align: center;
-    margin: 100px;
-    border-top: 20px;
-    border-top-color: red;
-    border-radius: 0.5rem;
-    padding: 10px;
-    width: 232px;
-
- }
-
-.screen {
-    background: #ecedef;
-    width: 220px;
-    height: 30px;
-    line-height: 30px;
-    padding: 2px;
-    margin: 0px 4px 10px 4px;
-    border: #3d4659 solid 1px;
-    text-align: right;
-
-}
-
-
-
- .box {
-    background-color: grey;
-    color: white;
-     border-radius: 5px;
-     padding: 20px;
-     font-size: 100%;
-     text-align: center;
-     border-top-left-radius:80% 20px; 
-     border-top-right-radius: 80% 20px; 
-     border-bottom-left-radius: 80% 20px; 
-     border-bottom-right-radius: 80% 20px;
- }
-
- .box.red {
-    background-color: darkRed;
-
- }
-
- h3 {
-     text-align: center;
-     padding-top: 10px;
-     margin-bottom: -10px;
-     color: white;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 100%;
- }
-
- .buttons-wrapper {
-    display:grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-gap: 10px;
- }
+    padding-top: 10px;
+    margin-bottom: -10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+  }
+  
+  body,html{
+    background-color: white;  }
+  
+  body{
+    box-sizing: border-box;
+    margin: 0; }
+    
+  .wrapper{
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+    height: 100vh;
+    padding: 10px; }
+  
+  .header{
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; }
+  
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: peachPuff;
+    font-family: fantasy; }
+  
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+  .calculator{
+    display: grid;
+    border-top-left-radius:80% 20px; 
+    border-top-right-radius: 80% 20px; 
+    border-bottom-left-radius: 80% 20px; 
+    border-bottom-right-radius: 80% 20px;
+    background-color: #45115e;
+    width: 400px;
+    height: 600px;
+    grid-gap: 10px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sc sc sc sc"
+    "ac ce dv mu"
+    "7  8  9  mi"
+    "6  5  4  pl"
+    "1  2  3  eq"
+    "z  z  pd eq";
+    padding: 10px; }
+  
+  .screen{
+    border-top-left-radius:80% 20px; 
+    border-top-right-radius: 80% 20px; 
+    border-bottom-left-radius: 80% 20px; 
+    border-bottom-right-radius: 80% 20px;
+    height: 100%;
+    margin-bottom: -40px; 
+    background-color: rgba(193, 221, 188, 0.897);
+    padding-right: 0.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: sc;
+    font-size: 3.5em;   
+    text-align: center; 
+    color: gray; }
+    
+  button{
+    border-top-left-radius:80% 20px; 
+    border-top-right-radius: 80% 20px; 
+    border-bottom-left-radius: 80% 20px; 
+    border-bottom-right-radius: 80% 20px;
+    display: flex;
+    font-size: 3em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceBlue; 
+    color: #6d5b7b;
+    font-family: monospace; }
+  
+  button:hover{
+    background-color: #a1c2e0; }
+    
+  .ac{
+    grid-area: ac; 
+    background-color: #690606;
+    color: aliceblue; }
+    
+  
+  .ce{
+    grid-area: ce;
+    background-color: #690606;
+    color: aliceblue; }
+  
+  .1{
+    grid-area: 1; }
+  .2{
+    grid-area: 2; }
+  .3{
+    grid-area: 3; }
+  .4{
+    grid-area: 4; }
+  .5{
+    grid-area: 5; }
+  .6{
+    grid-area: 6; }
+  .7{
+    grid-area: 7; }
+  .8{
+    grid-area: 8; }
+  .9{
+    grid-area: 9; }
+  .z{
+    grid-area: z; }
+  .plus{
+    grid-area: pl; 
+    background-color: darkslategrey;
+    color: #252424; }
+    
+  .minus{
+    grid-area: mi;
+    background-color: darkslategrey;
+    color: #252424; }
+  
+  .multiply{
+    grid-area: mu; 
+    background-color: darkslategrey;
+    color: #252424; }
+  
+  .divide{
+    grid-area: dv; 
+    background-color:darkslategrey;
+    color: #252424; }
+  
+  .equals{
+    grid-area: eq; 
+    background-color:darkslategrey;
+    color: aliceBlue; }
+    
+  .period{
+    grid-area: pd; }
+  
+    #bgimg {
+      background-image: url(http://1.bp.blogspot.com/-9faVVE8IyPM/UF8ym3gOMbI/AAAAAAAADZY/MHfEp3X16OY/s640/4_Cute_Cats_Wallpaper_1440x900_wallpaperhere.jpg);
+    }
+  

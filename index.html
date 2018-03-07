@@ -1,47 +1,38 @@
-<!DOCTYPE = HTML>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sprint 8 Calculator Build</title>
-    <link rel="stylesheet" type="text/css" href="script1.css">
-
+    <title>Theta's CatCulator</title>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" href="script1.css" type="text/css">
+  </head>
+  <body id="bgimg">
+    <div class="wrapper">
+      <div class="header">Theta's Cat-Culator</div>
+      <div class="main">
+	<div class="calculator">
+	  <div class="screen" id="screen"></div>
+	  <button class="ac" value="AC" onClick="allClear()">AC</button>
+	  <button class="ce" value="CE" onClick="clearEntry()">CE</button>
+	  <button class="1" value="1" onClick="enterNumber(this.value)">1</button>
+	  <button class="2" value="2" onClick="enterNumber(this.value)">2</button>
+	  <button class="3" value="3" onClick="enterNumber(this.value)">3</button>
+	  <button class="4" value="4" onClick="enterNumber(this.value)">4</button>
+	  <button class="5" value="5" onClick="enterNumber(this.value)">5</button>
+	  <button class="6" value="6" onClick="enterNumber(this.value)">6</button>
+	  <button class="7" value="7" onClick="enterNumber(this.value)">7</button>
+	  <button class="8" value="8" onClick="enterNumber(this.value)">8</button>
+	  <button class="9" value="9" onClick="enterNumber(this.value)">9</button>
+	  <button class="z" value="0" onClick="enterNumber(this.value)">0</button>
+	  <button class="period" value="." onClick="enterNumber(this.value)">.</button>
+	  <button class="plus" value="+" onClick="addSymbol(this.value)">+</button>
+	  <button class="minus" value="-" onClick="addSymbol(this.value)">-</button>
+	  <button class="multiply" value="*" onClick="addSymbol(this.value)">*</button>
+	  <button class="divide" value="/" onClick="addSymbol(this.value)">/</button>
+	  <button class="equals" value="=" onClick="pressEquals()">=</button>
+	</div>
+      </div>
+      <div class="footer"></div>
     </div>
-    <!--Create board -->
-<body>
-
-       
-   
-  <div class="buttons">
-        <h3>       
-                <p>Ruth and Theta's Calculator</p>
-                      </h3>
-        <div class="screen"></div>
-        <div class="buttons-wrapper">
-        <div class="box red">ac</div>
-        <div class="box red">ce</div>
-        <div class="box c">%</div>
-        <div class="box d">÷</div>
-        <div class="box e">7</div>
-        <div class="box f">8</div>
-        <div class="box g">9</div>
-        <div class="box h">x</div>
-        <div class="box i">4</div>
-        <div class="box j">5</div>
-        <div class="box k">6</div>
-        <div class="box l">-</div>
-        <div class="box m">1</div>
-        <div class="box n">2</div>
-        <div class="box o">3</div>
-        <div class="box p">+</div>
-        <div class="box q">0</div>
-        <div class="box r">.</div>
-        <div class="box s">=</div>
-        <div class="box t">off</div>
-    </div>
-    </div>
-</div>
-</body>    
-</head>
-
-
-</HTML>
+  </body>
+</html>
